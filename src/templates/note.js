@@ -24,15 +24,15 @@ export const query = graphql`
       inboundReferenceNotes {
         title
         slug
-        childMdx {
-          excerpt
+        childMarkdownRemark {
+          excerpt(format: HTML)
         }
       }
       outboundReferenceNotes {
         title
         slug
-        childMdx {
-          excerpt
+        childMarkdownRemark {
+          excerpt(format: HTML)
         }
       }
     }
